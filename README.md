@@ -66,4 +66,39 @@ npc404-web
 
 ## 当前状态
 
-仓库处于初始化阶段。先以 `npc404-docs` 中的技术方案为准，等 `npc404` 的 contracts 和 turn protocol 稳定后再搭建正式前端骨架。
+仓库当前包含一个可运行的 feasibility demo：
+
+- Vite + React + TypeScript。
+- Tailwind + shadcn-style 本地组件。
+- 废弃社区诊所主界面。
+- 玩家行动选项。
+- 事件流和 NPC 状态展示。
+- 重大事件 screen shake。
+- 选项和叙事切换过渡。
+
+## 本地运行
+
+先启动 `npc404` 服务端，再启动本仓库：
+
+```bash
+pnpm install
+pnpm dev
+```
+
+默认地址：
+
+```text
+http://127.0.0.1:5173
+```
+
+如果服务端地址不是默认值，创建本地 `.env`：
+
+```text
+VITE_API_BASE_URL=http://127.0.0.1:8787
+```
+
+构建检查：
+
+```bash
+pnpm build
+```
